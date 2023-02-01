@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Lesson_16</title>
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <header class="header"></header>
+         <main class="page">
+            <div class="form-block">
+               <div class="form-block__container">
+                  <h1 class="form-block__title">заполните форму</h1>
+                  <div class="form-block__body">
+                     <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data">
+                        <div class="form__column">
+                           <div class="form__left">
+                              <div class="form__line">
+                                 <label class="form__label" for="login-left">Введите Ваш логин</label>
+                                 <input id="login-left" class="form__input" type="text" name="login" required autocomplete="off" tabindex="1" placeholder="Введите Ваше имя">
+                              </div>
+                              <div class="form__line">
+                                 <label class="form__label" for="pass-left">Введите Ваш пароль</label>
+                                 <input id="pass-left" class="form__input" type="password" name="pass" required autocomplete="off" tabindex="2" placeholder="Введите Ваш пароль">
+                              </div>
+                              <div class="form__line">
+                                 <label class="form__label" for="email-left">Введите Ваш E-Mail</label>
+                                 <input id="email-left" class="form__input" type="email" name="email" required autocomplete="off" tabindex="3" placeholder="Введите Ваш E-mail">
+                              </div>
+                              <div class="form__line">
+                                 <div class="form__title">Ваши лучшие качества:</div>
+                                 <div class="form__checkbox checkbox">
+                                    <input id="checkbox-stress" class="checkbox__input checkbox__input--chk" type="checkbox" name="check" tabindex="4" value="стрессоустойчивасть">
+                                    <label class="checkbox__label" for="checkbox-stress"><span class="checkbox__text">стрессоустойчивасть</span></label>
+                                 </div>
+                                 <div class="form__checkbox checkbox">
+                                    <input id="checkbox-resp" class="checkbox__input checkbox__input--chk" type="checkbox" name="check" tabindex="4" checked value="ответственность">
+                                    <label class="checkbox__label" for="checkbox-resp"><span class="checkbox__text">ответственность</span></label>
+                                 </div>
+                                 <div class="form__checkbox checkbox">
+                                    <input id="checkbox-perform" class="checkbox__input checkbox__input--chk" type="checkbox" name="check" tabindex="4" value="исполнительность">
+                                    <label class="checkbox__label" for="checkbox-perform"><span class="checkbox__text">исполнительность</span></label>
+                                 </div>
+                                 <div class="form__checkbox checkbox">
+                                    <input id="checkbox-accuracy" class="checkbox__input checkbox__input--chk" type="checkbox" name="check" tabindex="4" value="аккуратность">
+                                    <label class="checkbox__label" for="checkbox-accuracy"><span class="checkbox__text">аккуратность</span></label>
+                                 </div>
+                                 <div class="form__checkbox checkbox">
+                                    <input id="checkbox-initiative" class="checkbox__input checkbox__input--chk" type="checkbox" name="check" tabindex="4" value="инициативность">
+                                    <label class="checkbox__label" for="checkbox-initiative"><span class="checkbox__text">инициативность</span></label>
+                                 </div>
+                              </div>
+                              <div class="form__line">
+                                 <div class="form__title">Водительский стаж:</div>
+                                 <div class="form__radio radio-form">
+                                    <input id="experience-1" class="radio-form__input radio-form__input--radio" type="radio" name="driving-experience" tabindex="5" value="до 1 года">
+                                    <label class="radio-form__label" for="experience-1"><span class="radio-form__text">до 1 года</span></label>
+                                 </div>
+                                 <div class="form__radio radio-form">
+                                    <input id="experience-2" class="radio-form__input radio-form__input--radio" type="radio" name="driving-experience" tabindex="5" value="до 5 лет" checked>
+                                    <label class="radio-form__label" for="experience-2"><span class="radio-form__text">до 5 лет</span></label>
+                                 </div>
+                                 <div class="form__radio radio-form">
+                                    <input id="experience-3" class="radio-form__input radio-form__input--radio" type="radio" name="driving-experience" tabindex="5" value="больше 5 лет">
+                                    <label class="radio-form__label" for="experience-3"><span class="radio-form__text">больше 5 лет</span></label>
+                                 </div>
+                              </div>
+                              <div class="form__line textarea">
+                                 <div class="textarea__body">
+                                    <textarea id="left-message" class="textarea__area" name="message" autocomplete="off" placeholder="введите комментарий сюда" tabindex="6"></textarea>
+                                    <label class="textarea__label" for="left-message">Оставте Ваш комментарий:</label>
+                                 </div>
+                              </div>
+                              <div class="form__line file">
+                                 <input class="file__input file__input--file" id="file-left" type="file" multiple name="file" tabindex="7">
+                                 <label class="file__label" for="file-left">Выберите файл:</label>    <!--?если поставить label перед input, то :focus не срабботает? -->
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form__column">
+                           <div class="form__right right">
+                              <div class="right__body">
+                                 <div class="form__line">
+                                    <label class="form__label" for="tel-right">Ваш номер телефона:</label>
+                                    <input id="tel-right" class="form__input" type="tel" name="tel" tabindex="8" placeholder="Введите Ваш номер телефона">
+                                 </div>
+                                 <div class="form__line">
+                                    <label class="form__label" for="number-right">Ваше любимое число:</label>
+                                    <input id="number-right" class="form__input" type="number" name="number" tabindex="9" placeholder="Введите Ваше любимое число">
+                                 </div>
+                                 <div class="form__line">
+                                    <label class="form__label" for="color-right">Ваш любимый цвет:</label>
+                                    <input id="color-right" class="form__input form__input--pointer" type="color" name="color" tabindex="10">
+                                 </div>
+                                 <div class="form__line">
+                                    <label class="form__label" for="search-right">Ваш поисковый запрос:</label>
+                                    <input id="search-right" class="form__input" type="search" name="search" tabindex="11" placeholder="Введите поисковый запрос">
+                                 </div>
+                                 <div class="form__line">
+                                    <div class="form__title">Выберите подходящий пункт:</div>
+                                    <select  class="form__select" name="list" tabindex="12">
+                                       <option value="1">Пункт 1</option>
+                                       <option value="2">Пункт 2</option>
+                                       <option value="3">Пункт 3</option>
+                                       <option value="4">Пункт 4</option>
+                                       <option value="5">Пункт 5</option>
+                                       <option value="1">Пункт 6</option>
+                                       <option value="2">Пункт 7</option>
+                                       <option value="3">Пункт 8</option>
+                                       <option value="4">Пункт 9</option>
+                                       <option value="5">Пункт 10</option>
+                                    </select>
+                                 </div>
+                                 <div class="form__line">
+                                    <label class="form__label" for="datetime-right">Выберите дату и время:</label>
+                                    <input id="datetime-right" class="form__input form__input--pointer" type="datetime-local" name="datetime" tabindex="13">
+                                 </div>
+                              </div>
+                              <div class="form__actions">
+                                 <button class="form__button button button--border" type="reset" tabindex="14"><span>Сбросить</span></button>
+                                 <button class="form__button button" type="submit" tabindex="15"><span>Отправить</span></button>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+
+                  </div>
+               </div>
+            </div>
+         </main>
+         <footer class="footer"></footer>
+      </div>
+   </body>
+
+</html>
