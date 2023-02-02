@@ -128,14 +128,16 @@ body {
    cursor: pointer;
    line-height: 1.2;
    color: #424551;
-   gap: 12px;
+   position: relative;
+   padding: 0px 0px 0px 28px;
 }
 .action-form__label::before {
    content: "";
    flex: 0 0 16px;
+   position: absolute;
    width: 16px;
    height: 16px;
-   top: 0px;
+   top: 3px;
    left: 0;
    border: 1px solid #FF3F3A;
    border-radius: 3px;
