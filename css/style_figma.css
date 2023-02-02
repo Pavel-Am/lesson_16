@@ -78,8 +78,9 @@ body {
 .form__line {
    display: flex;
    flex-direction: column;
+   min-width: 345px;
+   flex: 1 1 50%;
    row-gap: 8px;
-   flex: 1 0 50%;
    padding: 0 12.5px;
 }
 .form__line:not(:last-child) {
