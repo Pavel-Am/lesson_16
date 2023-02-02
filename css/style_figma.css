@@ -93,6 +93,7 @@ body {
 }
 .form__input--textarea {
    height: 128px;
+   resize: vertical;
 }
 .form__input:focus {
    background: #FFFFFF;
