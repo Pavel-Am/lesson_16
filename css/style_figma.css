@@ -115,6 +115,7 @@ body {
 }
 .action-form__item {
    display: flex;
+   flex: 0 1 315px;
    position: relative;
 }
 .action-form__checkbox {
@@ -124,19 +125,17 @@ body {
    opacity: 0;
 }
 .action-form__label {
-   max-width: 315px;
    display: inline-flex;
+   position: relative;
    cursor: pointer;
    line-height: 1.2;
    color: #424551;
-   position: relative;
-   padding: 0px 0px 0px 28px;
+   column-gap: 12px;
 }
 .action-form__label::before {
    content: "";
+   position: relative;
    flex: 0 0 16px;
-   position: absolute;
-   width: 16px;
    height: 16px;
    top: 3px;
    left: 0;
